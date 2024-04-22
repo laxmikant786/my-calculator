@@ -26,7 +26,8 @@
       let card1 = Number(document.getElementById("card").value);
       let paytm1 = Number(document.getElementById("paytm").value);
       let cash1 = Number(document.getElementById("cash").value);
-      let total_sum = alp1 + card1 + paytm1 + cash1
+           let bank_cash1 = Number(document.getElementById("bank_cash").value);
+      let total_sum = alp1 + card1 + paytm1 + cash1+bank_cash1
       let total = document.getElementById("total").value = String(total_sum);
       let total_diff = actuall_amount1 - total
       document.getElementById("total_diff").value = String(total_diff);
@@ -93,6 +94,14 @@
       </div>
       <div class="col-md-6">
         <input type="text" class="form-control" id="cash" placeholder="Enter Amount" value="0">
+      </div>
+    </div>
+     <div class="row mt-3">
+      <div class="col-md-6">
+        <label for="exampleFormControlInput1" class="form-label">Bank Cash</label>
+      </div>
+      <div class="col-md-6">
+        <input type="text" class="form-control" id="bank_cash" placeholder="Enter Amount" value="0">
       </div>
     </div>
 
